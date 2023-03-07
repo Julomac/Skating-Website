@@ -1,0 +1,67 @@
+ScreenManager:
+    HomePage:
+    Building:
+
+
+<HomePage>:
+    name: "home"
+
+    BoxLayout:
+        orientation: "vertical"
+
+        Label:
+            text: "Albertus Magnus"
+            font_size: (dp(40))
+            size_hint: (1,.25)
+
+        GridLayout:
+            cols: 2
+            spacing: dp(20)
+            padding: dp(20)
+            Button:
+                text: "Find your classes!"
+                on_press: app.root.current = "building"
+            Button:
+                text: "Find services"
+            Button:
+                text: "Info about the school"
+
+
+<Building>
+    name: "building"
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            padding: dp(25)
+            size_hint: (1,.25)
+            Button:
+                text: "Back"
+                font_size: dp(30)
+                on_press: app.root.current = 'home'
+
+                size_hint: (.25, 1)
+
+            Label:
+                text: "Albertus Magnus"
+                font_size: dp(40)
+
+        Label:
+            text: "What building is the class in ?"
+            size_hint: (1, .15)
+            font_size: dp(30)
+        GridLayout:
+            cols: 2
+            spacing: dp(20)
+            padding: dp(20)
+            Button:
+                text: "Building 1!"
+            Button:
+                text: "Building 2"
+            Button:
+                text: "Building 3"
+
+
+
+
+
+<HomePage>:
