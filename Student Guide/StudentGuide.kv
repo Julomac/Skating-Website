@@ -12,14 +12,15 @@ ScreenManager:
 
         Label:
             text: "Albertus Magnus"
-            font_size: (dp(40))
+            font_size: (.11*self.width)
             size_hint: (1,.25)
 
         GridLayout:
             cols: 2
-            spacing: dp(20)
-            padding: dp(20)
+            spacing: dp(10)
+            padding: dp(10)
             Button:
+
                 text: "Find your classes!"
                 on_press: app.root.current = "building"
             Button:
@@ -37,19 +38,19 @@ ScreenManager:
             size_hint: (1,.25)
             Button:
                 text: "Back"
-                font_size: dp(30)
+                font_size: .14*self.width
                 on_press: app.root.current = 'home'
 
                 size_hint: (.25, 1)
 
             Label:
                 text: "Albertus Magnus"
-                font_size: dp(40)
+                font_size: .11*self.width
 
         Label:
             text: "What building is the class in ?"
             size_hint: (1, .15)
-            font_size: dp(30)
+            font_size: .07*self.width
         GridLayout:
             cols: 2
             spacing: dp(20)
