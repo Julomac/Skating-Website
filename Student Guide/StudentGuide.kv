@@ -1,6 +1,7 @@
 ScreenManager:
     HomePage:
     Building:
+    RoomPage:
 
 
 <HomePage>:
@@ -55,6 +56,7 @@ ScreenManager:
             padding: dp(20)
             Button:
                 text: "Building 1!"
+                on_press: app.root.current = 'room'
             Button:
                 text: "Building 2"
             Button:
@@ -64,4 +66,36 @@ ScreenManager:
 
 
 
-<HomePage>:
+<RoomPage>:
+    name: "room"
+
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            padding: dp(25)
+            size_hint: (1,.25)
+            Button:
+                text: "Back"
+                font_size: dp(30)
+                on_press: app.root.current = 'home'
+
+                size_hint: (.25, 1)
+
+            Label:
+                text: "Albertus Magnus"
+                font_size: dp(40)
+
+        Label:
+            text: "What is the room that your are looking for ?"
+            size_hint: (1, .15)
+            font_size: dp(30)
+        GridLayout:
+            cols: 2
+            spacing: dp(20)
+            padding: dp(20)
+            Button:
+                text: "Room 203"
+            Button:
+                text: "Room 305"
+            Button:
+                text: "Room 315"

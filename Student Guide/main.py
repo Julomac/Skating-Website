@@ -12,6 +12,9 @@ class HomePage(Screen):
 class Building(Screen):
     pass
 
+class RoomPage(Screen):
+    pass
+
 
 class ScreenManager(ScreenManager):
     pass
