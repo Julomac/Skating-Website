@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+*{
+    font-family: 'Darumadrop One', cursive;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: black   
+}
+.carousel-item img {
+    height: 400px;
+    width: 600px;
+  }
+  .card{
+    margin:  3% auto ;
+
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+      filter: invert(100%);
+  }
+
+  
+  
