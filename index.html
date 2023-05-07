@@ -48,15 +48,58 @@
     </nav>
     <!----------------End of  nav bar--------------->
     <div class="container">
-      
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title text-center">Learn to Skate with JB</h1>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <img class="fronPageImg" src="./img/figureskates.jpg" alt="figure skate" width="100%">
+          </div>
+          <div class="col12 col-lg-6  d-flex align-items-center">
+            <P class="introMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non dicta, quia fugiat placeat aspernatur quisquam rem quae quidem fuga suscipit, iste autem molestias. Dolores ad ipsum quas commodi quibusdam.</P>
+          </div>
+        </div>
+      </div>
+      <h1 class="title text-center">Learn to Skate with JB</h1>
     </div>
-    <h1 class="title text-center">Learn to Skate with JB</h1>
-    
-    
-    
     <!-- card component with all the lesson-->
     <div class="container lesson">
       <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="./img/Screenshot 2023-03-12 013329.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="./img/Screenshot 2023-03-12 013329.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card shadow" style="width: 18rem">
             <img
@@ -198,20 +241,35 @@
       window.sr = ScrollReveal();
       sr.reveal(".navbar", {
         duration: 2000,
-        origin: "bottom",
+        scale: 0
         
       });
       sr.reveal(".title", {
-        duration: 2000,
-        delay: 1000,
+        duration: 1500,
+        delay: 500,
         origin: "left",
         distance: "50px",
+        scale: 0
       });
       sr.reveal(".card", {
         duration: 1000,
         origin: "bottom",
         distance: "250px",
-        viewFactor: .5
+        viewFactor: .5,
+        interval: 200
+      });
+      sr.reveal('.introMessage',{
+        duration: 1500,
+        delay: 700,
+        origin: "right",
+        distance: "150px"
+      });
+      sr.reveal('.fronPageImg',{
+        duration: 1500,
+        delay: 700,
+        origin: "left",
+        distance: "150px"
+        
       });
     </script>
   </body>
