@@ -8,18 +8,11 @@ h1{
     font-size: 2.5rem;
     color: black   
 }
-.carousel-item img {
-    height: 400px;
-    width: 600px;
-  }
+
   .card{
     margin:  3% auto ;
+  }
 
-  }
-  .carousel-control-next,
-  .carousel-control-prev {
-      filter: invert(100%);
-  }
 
   
   
